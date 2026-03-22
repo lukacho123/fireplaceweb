@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ჩვენს შესახებ</title>
+  <link rel="stylesheet" href="About.css" />
+</head>
+<body>
+  <div class="background">
+    <div class="content">
+      <h1>ჩვენს შესახებ</h1>
+      <p><strong>კონტაქტი:</strong> გიორგი ქავთარაძე</p>
+      <p><strong>ელ. ფოსტა:</strong> info@example.com</p>
+      <p><strong>ტელეფონი:</strong> +995 599 123 456</p>
+
+      <!-- Facebook Button -->
+      <div class="social-buttons">
+        <a href="https://facebook.com" target="_blank" class="fb-button">Facebook-ზე გადადი</a>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send Message</h2>
+        <form id="contactForm">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Type your Message...</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <!-- Google Map -->
+      <div class="map-container">
+        <h2 style="margin-top: 30px; margin-bottom: 10px;">სად ვიმყოფებით</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.586309846179!2d44.79655251567973!3d41.715137879235065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cfa30e1a509%3A0x5a0df52bb2b72e7f!2sTbilisi%2C%20Georgia!5e0!3m2!1sen!2sge!4v1650999999999"
+          width="100%"
+          height="300"
+          style="border:0; border-radius: 15px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>ყველა უფლება დაცულია &copy; 2025</p>
+  </footer>
+
+  <script src="./about.js"></script>
+</body>
+</html>

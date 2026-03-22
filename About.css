@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  overflow: hidden; 
+}
+
+.background {
+  background-image: url("aboutus.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15px;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+/* Facebook Button */
+.social-buttons {
+  margin: 20px 0;
+}
+
+.fb-button {
+  background-color: #1877f2;
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.fb-button:hover {
+  background-color: #145dbf;
+}
+
+/* Contact Form */
+.contact-form {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: rgba(255, 255, 255, 0.25);
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+/* Map Container */
+.map-container {
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .content {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+  }
+}
+
